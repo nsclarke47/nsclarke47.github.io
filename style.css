@@ -1,0 +1,145 @@
+/* colour palette:
+
+#ffffff
+#d3e0f7
+#a6172d
+#181842
+
+*/
+
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+}
+
+body > header > #logoimg {
+    width: 10%
+}
+
+#logo {
+    margin: 0px;
+    padding: 8px;
+    /* if name of font is two words, "" must be used */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 40%;
+}
+
+ul {
+    margin: 0px;
+}
+
+/* ... > ... ensures only the direct child of the parent tag is selected, i.e. not all headers, only the one directly below the body */
+body > header {
+    background-color: #d3e0f7;
+    color: #181842;
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nav-ul {
+    display: flex;
+}
+
+#nav-ul > li {
+    padding: 8px;
+    margin: 16px;
+}
+
+body > header >nav > ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+body > main a {
+    color: #a6172d;
+}
+
+.navbutton {
+    color: #181842;
+    text-decoration: none;
+    padding: 12px;
+    border: 8px solid white;
+    border-radius: 10%;
+}
+
+body > main article {
+    width: 70%;
+    margin: auto;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+#main-content > div {
+    width: 70%;
+}
+
+body article img {
+    width: 30%;
+}
+
+#eattokyoicons {
+    display: flex;
+    padding: 12px;
+    justify-content: space-around;
+}
+
+#map {
+    height: 100%;
+  }
+
+#form {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+form {
+    text-align: left;
+}
+
+#form > h2 {
+    background-color: #d3e0f7;
+}
+
+body > footer {
+    background-color: #d3e0f7;
+    display: flex;
+    padding: 8px;
+    color: #181842;
+    height: 9vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logofooterimg {
+    width: 5%;
+}
+
+#logofooter {
+    margin: 0px;
+    padding: 8px;
+    width: 60%;
+}
+
+#footer-ul {
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div > li {
+    /* margin-left: 12px; */
+    margin: 4px;
+    text-align: left;
+}
+
+#footer-ul > div > li > a {
+    text-decoration: none;
+    color: #181842;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ensure href link is the same as css document title so css will be linked to this html page -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" 
+    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LowCostLondon</title>
+</head>
+<body>
+    <header>
+        <!-- header content goes here -->
+         <img src="https://tse4.mm.bing.net/th?id=OIP.lcbI98zXdtxO9nUL_amFOwHaED&pid=Api" alt="Logo" class="logoimg" id="logoimg">
+         <h1 id="logo">LowCostLondon</h1>
+         <nav>
+            <ul id="nav-ul">
+                <li><a href="https://code.visualstudio.com/" class="navbutton">Home</a></li>
+                <li><a href="https://code.visualstudio.com/" class="navbutton">About us</a></li>
+                <li><a href="https://code.visualstudio.com/" class="navbutton">Contact Us</a></li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+        <!-- main website content goes here -->
+        <div id="main-content">
+            <aside>
+                <section>
+                    <h4>Filter by Season</h4>
+                    <nav>
+                        <!-- use ul>li*3>a shortcut to create unordered list with 3 elements, each containing <a> (anchor tag) -->
+                        <ul>
+                            <li><a href="">Filter for Autumn</a></li>
+                            <li><a href="">Filter for Winter</a></li>
+                            <li><a href="">Filter for Spring</a></li>
+                            <li><a href="">Filter for Summer</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section>
+                    <h4>Filter by Category</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="">Food & Drink</a></li>
+                            <li><a href="">Art & Culture</a></li>
+                            <li><a href="">Entertainment</a></li>
+                            <li><a href="">Nature</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside>
+            <div>
+                <article>
+                    <header>
+                        <!-- article header goes here, including title and read time, and source if applicable -->
+                         <h2>The best place for sushi: Eat Tokyo, Soho</h2>
+                         <h3>Read time: 1 minute</h3>
+                    </header>
+                    <main>
+                        <!-- article text goes here -->
+                         <p>
+                            <!-- Lorem[] where [] is a number generates []number of language-like words. Use as a placeholder when designing general format before content of website is available. -->
+                            Eat tokyo is a small chain of restaurants with eight branches spread throughout London and three in Germany. The menu features an extensive range of sushi rolls, nigiri sushi, sashimi, tempura, bento boxes, and many full-sized dishes. While it is not a dedicated vegetarian restaurant, the menu is well equipped to cater to vegetarians and vegans.
+                        </p>
+                         <!-- <p></p> used for paragraphs - space above and below text. <br> used for line break - new text goes directly below previous line. <br> is a single (not paired) tag. -->
+                         <a href="https://www.eattokyo.co.uk/" target="_blank">Find out more</a>
+                    </main>
+                    <footer>
+                        <div id="eattokyoicons">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/d9/5a/6c/photo0jpg.jpg" alt="Image of the exterior of an Eat Tokyo branch">
+                            <!-- map -->                       
+                            <gmp-map
+                            center="51.53647713870993, -0.15913447285544638"
+                            zoom="10"
+                            map-id="DEMO_MAP_ID"
+                            style="height: 270px; width: 300px"
+                            >
+                            <gmp-advanced-marker
+                                position="51.51485762688776, -0.13038810702444323"
+                                title="Eat Tokyo, Soho"
+                            ></gmp-advanced-marker>
+                            <gmp-advanced-marker
+                                position="51.51324500069502, -0.12066239837783764"
+                                title="Eat Tokyo, Covent Garden"
+                            ></gmp-advanced-marker>
+                            <gmp-advanced-marker
+                                position="51.521149783486706, -0.11731500189365786"
+                                title="Eat Tokyo, Holborn"
+                            ></gmp-advanced-marker>
+                            <gmp-advanced-marker
+                                position="51.51154695445636, -0.19406970896037679"
+                                title="Eat Tokyo, Notting Hill Gate"
+                            ></gmp-advanced-marker>
+                            <gmp-advanced-marker
+                                position="51.49523040891756, -0.23210777681119427"
+                                title="Eat Tokyo, Hammersmith"
+                            ></gmp-advanced-marker>
+                            <gmp-advanced-marker
+                                position="51.5181972676264, -0.14601093595242015"
+                                title="Eat Tokyo, Tonkotsu-ya"
+                            ></gmp-advanced-marker>
+                            <gmp-advanced-marker
+                                position="51.57198409019041, -0.19427936072621627"
+                                title="Eat Tokyo, Golders Green"
+                            ></gmp-advanced-marker>
+                            <gmp-advanced-marker
+                                position="51.57134966342466, -0.1951595035264934"
+                                title="Eat Tokyo, G2 Shabu-Shabu"
+                            ></gmp-advanced-marker>
+                            <gmp-advanced-marker
+                                position="51.55804503049923, -0.21367616671499212"
+                                title="Eat Tokyo, Cricklewood"
+                            ></gmp-advanced-marker>
+                            </gmp-map>
+                         </div>
+
+                         <h3>Last edited: 13/09/2024</h3>
+                         <!-- target="_..." determines whether hyperlink will open in current tab or open as new tab. Use when hyperlink goes to external website, to ensure user remains on your website simultaneously. -->
+                    </footer>
+                </article>
+            </div>            
+        </div>
+         
+         <hr>
+         <div id="form">
+            <h2>Found a hidden gem we haven't mentioned? Let us know!</h2>
+            <h3>We want to know your favourite places! From great value restaurants to parks off the beaten track, fill in the form below to feature your hidden gem on our website.</h3>
+            <form action="" method="">
+                <p>* = required field</p>
+                <!-- the action is the server URL that the form is sent to. the method will have POST or GET -->
+                <!-- the label for= and id= must match so the input is assigned to the label. this is important for screen reader accesibility. it also ensures the text box is selected even if the user clicks on the textbox title, not the box. -->
+
+                <!-- user enters first name -->
+                <label for="first_name">First Name: *</label>
+                <input type="text" name="" id="first_name" name="first_name" required>
+                <br> <br>
+
+                <!-- user enters last name -->
+                <label for="last_name">Last Name: </label>
+                <input type="text" name="" id="last_name" name="last_name" required>
+                <br> <br>
+
+                <!-- user enters email -->
+                <!-- changing input type to email ensures value is checked to be email. form cannot be submitted if @ symbol not found. -->
+                <label for="email">Email: *</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <br>
+
+                <!-- user enters biography (text paragraph) -->
+                <label for="description">Description: *
+                    <br>
+                    NB: Please include details of location, fees, estimated time spent at the attraction and best time of day/year to go.
+                    <br>
+                </label>
+                <textarea name="description" id="description" cols="50" rows="10"></textarea>
+                <br> <br>
+                
+                <!-- option for user to subscribe -->
+                <input type="checkbox" id="credit" name="credit">
+                <label for="credit">Do you consent for us to credit/contact you in the case of your hidden gem featuring on our webpage? *</label>
+                <br> <br>
+
+                <!-- button to submit form. type=submit makes it a button? -->
+                <input type="submit" value="Send!">
+                
+            </form>
+         </div>
+         <hr>
+    </main>
+
+    <footer>
+        <!-- body footer content goes here, such as terms and consitions and privacy policy -->
+        <!-- footers are the best place for <div>. it splits the items into side-by-side groups, which can then be tackled independently by CSS. other things shouldn't really use them, e.g. body and articles can have header, main and footer, and aside can have sections -->
+        <img src="https://tse4.mm.bing.net/th?id=OIP.lcbI98zXdtxO9nUL_amFOwHaED&pid=Api" alt="Logo" class="logoimg" id="logofooterimg">
+        <h2 id="logofooter">LowCostLondon</h2>
+        <section>
+            <nav>
+                <ul id="footer-ul">
+                    <div>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Contact</a></li>
+                    </div>
+                    <div>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Cookie Policy</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=[CANNOT.INSERT.API.KEY.DUE.TO.SECURITY]&loading=async&libraries=maps,marker&v=beta" defer></script>
+</body>
+</html>
